@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        //Chapter 6
+/*
+//Question 1:
+document.writeln("<h1> Question 1 </h1>");
+let a = 10;
+document.writeln("<h3>The value of a is = ",a )
+document.writeln(" \n <h3>......................................" )
+++a;
+document.writeln("\n <h3>The value of ++a is = ",a )
+document.writeln("\n <h3>Now the  value of a is = ",a )
+
+document.writeln("\n <h3>The value of a++ is = ",a++ )
+document.writeln("\n <h3>Now the  value of a is = ",a )
+
+document.writeln("\n <h3>The value of --a is = ",--a )
+document.writeln("\n <h3>Now the  value of a is = ",a )
+
+document.writeln("\n <h3>The value of a-- is = ",a-- )
+document.writeln("\n <h3>Now the  value of a is = ",a )
+
+//Question 2:
+var c = 2, b = 1;
+var result = --a - --b + ++b + b--;
+document.writeln(" \n <h1> Question 2 </h1>");
+document.writeln("<h3>--a; ",--a);
+document.writeln("<h3>--a - --b; ",--a - --b);
+document.writeln("<h3>--a - --b + ++b; ",--a - --b + ++b);
+document.writeln("<h3>--a - --b + ++b + b--; ",result);
+document.writeln("<h3>a is ",2);
+document.writeln("<h3>b is ",1);
+document.writeln("<h3>Result is ",result);
+
+//Question 3:
+prompt("Enter your name");
+alert("Welcome!");
+
+//Question 5:
+var t = prompt("Enter a number for table",5);
+document.writeln("<h1> Question 5 </h1>");
+document.writeln(t," *"," 1","=",t*1);
+document.writeln("<p>\n</p>", t," *"," 2","=",t*2);
+document.writeln("<p>\n</p>", t," *"," 3","=",t*3);
+document.writeln("<p>\n</p>", t," *"," 4","=",t*4);
+document.writeln("<p>\n</p>", t," *"," 5","=",t*5);
+document.writeln("<p>\n</p>", t," *"," 6","=",t*6);
+document.writeln("<p>\n</p>", t," *"," 7","=",t*7);
+document.writeln("<p>\n</p>", t," *"," 8","=",t*8);
+document.writeln("<p>\n</p>", t," *"," 9","=",t*9);
+document.writeln("<p>\n</p>", t," *"," 10","=",t*10);
+*/
+//Question 6:
+var sub1 = prompt("Enter subject 1");
+var obt1 = prompt("Enter obtained mark of subject 1");
+
+var sub2 = prompt("Enter subject 2");
+var obt2 = prompt("Enter obtained mark of subject 2");
+
+var sub3 = prompt("Enter subject 3");
+var obt3 = prompt("Enter obtained mark of subject 3");
+
+var totalmarks = 100;
+
+var per1 = obt1/totalmarks * 100;
+var per2 = obt2/totalmarks * 100;
+var per3 = obt3/totalmarks * 100;
+
+var totalobt = obt1 + obt2 + obt3;
+var totaltm = totalmarks * 3;
+var totalper = totalobt/totaltm * 100;
+
+document.writeln("<h1> Question 6 </h1>");
+document.writeln("<table> <tr> <th>Subject</th> <th>Total marks</th> <th>Obtained marks</th> <th>Percentage<th> </tr> <tr> <td>",sub1,"</td> <td>",totalmarks,"</td> <td>",obt1,"</td> <td>",per1,"%</td> </tr> <tr> <td>",sub2,"</td> <td>",totalmarks,"</td> <td>",obt2,"</td> <td>",per2,"%</td> </tr> <tr> <td>",sub3,"</td> <td>",totalmarks,"</td> <td>",obt3,"</td> <td>",per3,"%</td> </tr> <tr> <td>Total</td> <td>",totaltm,"</td> <td>",totalobt,"</td> <td>",totalper,"%</td> </tr> </table>");
+
+     </script>
+</body>
+</html>
